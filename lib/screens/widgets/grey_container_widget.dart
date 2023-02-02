@@ -16,11 +16,12 @@ class GreyContainerWidget extends StatelessWidget {
         borderRadius: BorderRadius.circular(20),
       ),
       child: Center(
-          child: SvgPicture.asset(
-        assetName,
-        width: 24,
-        height: 40,
-      )),
+        child: SvgPicture.asset(
+          assetName,
+          width: 24,
+          height: 40,
+        ),
+      ),
     );
   }
 }

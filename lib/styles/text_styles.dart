@@ -22,4 +22,31 @@ class AppTextStyles {
       fontWeight: FontWeight.w400,
       fontSize: 15,
       color: AppColors.mainDark);
+
+  static TextStyle headerStyle = const TextStyle(
+    fontWeight: FontWeight.bold,
+    fontSize: 30,
+    color: AppColors.mainDark,
+  );
+
+  static TextStyle headerStyle2 = const TextStyle(
+    fontFamily: 'Playfair Display',
+    fontWeight: FontWeight.bold,
+    fontSize: 20,
+    color: AppColors.mainDark,
+  );
+
+  static TextStyle nameStyle = const TextStyle(
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.bold,
+    fontSize: 12,
+    color: AppColors.mainDark,
+  );
+
+  static TextStyle duty = const TextStyle(
+    fontFamily: 'Montserrat',
+    fontWeight: FontWeight.bold,
+    fontSize: 10,
+    color: AppColors.textSecondary,
+  );
 }

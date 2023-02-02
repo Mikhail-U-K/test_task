@@ -25,16 +25,16 @@ class _HomePageState extends State<HomePage> {
     ]);
   }
 
-  @override
-  dispose() {
-    SystemChrome.setPreferredOrientations([
-      DeviceOrientation.landscapeRight,
-      DeviceOrientation.landscapeLeft,
-      DeviceOrientation.portraitUp,
-      DeviceOrientation.portraitDown,
-    ]);
-    super.dispose();
-  }
+  // @override
+  // dispose() {
+  //   SystemChrome.setPreferredOrientations([
+  //     DeviceOrientation.landscapeRight,
+  //     DeviceOrientation.landscapeLeft,
+  //     DeviceOrientation.portraitUp,
+  //     DeviceOrientation.portraitDown,
+  //   ]);
+  //   super.dispose();
+  // }
 
   @override
   Widget build(BuildContext context) {
@@ -63,7 +63,7 @@ class _HomePageState extends State<HomePage> {
                 width: width * 0.45,
               ),
               SizedBox(
-                height: height * 0.05,
+                height: height * 0.025,
               ),
               TextContainer(
                 text: TextForWidgets.descriptionText,
@@ -73,16 +73,16 @@ class _HomePageState extends State<HomePage> {
               ),
               Row(
                 mainAxisAlignment: MainAxisAlignment.spaceEvenly,
-                children: [
-                  const GreyContainerWidget(assetName: 'assets/icons/info.svg'),
+                children: const [
+                  GreyContainerWidget(assetName: 'assets/icons/info.svg'),
                   SizedBox(
                     width: 10,
                   ),
-                  const MapButton(),
+                  MapButton(),
                   SizedBox(
                     width: 10,
                   ),
-                  const GreyContainerWidget(
+                  GreyContainerWidget(
                       assetName: 'assets/icons/Instruction.svg'),
                 ],
               ),
