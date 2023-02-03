@@ -10,7 +10,7 @@ class GreyContainerWidget extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       height: 75,
-      width: 75,
+      width: 95,
       decoration: BoxDecoration(
         color: AppColors.buttonSecondary,
         borderRadius: BorderRadius.circular(20),

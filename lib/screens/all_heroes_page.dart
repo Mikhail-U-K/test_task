@@ -57,41 +57,46 @@ class _AllHeroesPageState extends State<AllHeroesPage> {
             EdgeInsets.only(left: width * 0.01, top: 10, bottom: height * 0.01),
         child: Row(
           children: [
-            Column(
-              children: [
-                InkWell(
-                  onTap: () => Navigator.pop(context),
-                  child: SvgPicture.asset('assets/icons/arrow_back.svg'),
-                ),
-              ],
+            Flexible(
+              child: Column(
+                children: [
+                  InkWell(
+                    onTap: () => Navigator.pop(context),
+                    child: SvgPicture.asset('assets/icons/arrow_back.svg'),
+                  ),
+                ],
+              ),
             ),
             const SizedBox(
               width: 10,
             ),
-            Column(
-              crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
-                Text(
-                  'Все герои',
-                  style: AppTextStyles.headerStyle,
-                ),
-                Text(
-                  'Название этажа',
-                  style: AppTextStyles.headerStyle2,
-                ),
-                HeroesRow(
-                    pictures: first,
-                    height: height * 0.27,
-                    width: width * 0.15),
-                Text(
-                  'Название этажа',
-                  style: AppTextStyles.headerStyle2,
-                ),
-                HeroesRow(
-                    pictures: second,
-                    height: height * 0.27,
-                    width: width * 0.15),
-              ],
+            Flexible(
+              flex: 3,
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    'Все герои',
+                    style: AppTextStyles.headerStyle,
+                  ),
+                  Text(
+                    'Название этажа',
+                    style: AppTextStyles.headerStyle2,
+                  ),
+                  HeroesRow(
+                      pictures: first,
+                      height: height * 0.27,
+                      width: width * 0.15),
+                  Text(
+                    'Название этажа',
+                    style: AppTextStyles.headerStyle2,
+                  ),
+                  HeroesRow(
+                      pictures: second,
+                      height: height * 0.27,
+                      width: width * 0.15),
+                ],
+              ),
             ),
           ],
         ),
